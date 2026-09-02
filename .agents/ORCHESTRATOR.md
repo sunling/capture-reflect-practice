@@ -19,8 +19,8 @@
 2. 分别使用 `capture-note` 与 `capture-journal`。
 3. 用相对链接把两条记录连接起来。
 
-Weekly Review 必须同时检查指定范围内的 Journal 与 Input，并把回看存入独立的 `reviews/`。不要把回看档案重新当作下一次 Daily 的原始证据。
+Weekly Review 必须同时检查指定范围内的 journals/ 与 notes/，并把回看存入独立的 `reviews/`。不要把回看档案重新当作下一次 Journal 或 Note 的原始证据。
 
-如果回看中发现可能的 Practice，先展示证据并征得使用者确认，再创建目录。如果发现可能的输出方向，只提供少量候选；使用者选择一个主题并确认继续后，再交给 `new-article`。默认先让使用者自由补充想到的经历，再跨时间检索相关 Journal、Inputs 与 Reviews，整理主题素材地图；之后才针对空白进入 Grill Me。文章应归入一个已经立项的输出练习，首稿保存到 `practices/<输出练习名>/drafts/YYYYMMDD-文章主题.md`，后续继续更新同一文件；不要把单篇文章主题直接当作 Practice 名称。
+如果回看中发现可能的 Practice，先展示证据并征得使用者确认，再创建目录。如果发现可能的输出方向，只提供少量候选；使用者选择一个主题并确认继续后，再交给 `new-article`。默认先让使用者自由补充想到的经历，再跨时间检索相关 journals/、notes/ 与 reviews/，整理主题素材地图；之后才针对空白进入 Grill Me。文章应归入一个已经立项的输出练习，首稿保存到 `practices/<输出练习名>/drafts/YYYYMMDD-文章主题.md`，后续继续更新同一文件；不要把单篇文章主题直接当作 Practice 名称。
 
 如果使用者想打破信息茧房，`bubble-breaker` 负责寻找资源；不要在对方完成之前把推荐当成已经发生的输入。

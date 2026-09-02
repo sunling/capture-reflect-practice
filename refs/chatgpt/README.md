@@ -21,7 +21,7 @@
 
 六个 Skill 是六条完整工作流，不需要对应六个 Project。
 
-Journal、Input 与 Article Workshop 适合保留独立 Project：前两个接住随时发生的记录，Article Workshop 接住已经选定、需要持续追问和反复修改的主题。Weekly Review 不需要单独的 Project：先在一个专用聊天中测试流程，再从同一聊天创建定时任务。每次运行都回到这个聊天，用户可以直接回答问题、更新同一档案，并选择一个方向带到 Article Workshop 继续发展。
+Journal、Note 与 Article Workshop 适合保留独立 Project：前两个接住随时发生的记录，Article Workshop 接住已经选定、需要持续追问和反复修改的主题。Weekly Review 不需要单独的 Project：先在一个专用聊天中测试流程，再从同一聊天创建定时任务。每次运行都回到这个聊天，用户可以直接回答问题、更新同一档案，并选择一个方向带到 Article Workshop 继续发展。
 
 ## 目录结构
 
@@ -45,9 +45,9 @@ Journal、Input 与 Article Workshop 适合保留独立 Project：前两个接�
 2. **填写个人偏好**：在根目录 `PROFILE.md` 中填写时区、主要语言和隐私边界。
 3. **连接 GitHub**：在 ChatGPT 中连接并授权 GitHub。
 4. **创建三个长期 Project**：先查看 [`project-settings/README.md`](project-settings/README.md)，再分别打开 [`new-journal.md`](project-settings/new-journal.md)、[`new-note.md`](project-settings/new-note.md) 与 [`new-article.md`](project-settings/new-article.md)，复制原始 Markdown 并粘贴到对应 Project 的 **Project Instructions**。第三个 Project 建议命名为“文章工作台”。只需替换 `YOUR_GITHUB_USERNAME/YOUR_REPOSITORY`；不要把完整 Skill 再粘贴进 Project Instructions，文章工作台会在每次任务开始时从仓库读取最新 Skill。
-5. **测试记录入口**：在 Journal 或 Input Project 中保存一条不敏感的测试记录，确认 GitHub 读取与写入都能工作。
-6. **测试 Weekly Review**：新建一个专用聊天，先手动要求 ChatGPT 读取你仓库中的 `.agents/skills/weekly-review/SKILL.md` 并执行一次第一阶段，不创建定时任务；确认它能读取两类 Daily 并写入 `reviews/`。
+5. **测试记录入口**：在 Journal 或 Note Project 中保存一条不敏感的测试记录，确认 GitHub 读取与写入都能工作。
+6. **测试 Weekly Review**：新建一个专用聊天，先手动要求 ChatGPT 读取你仓库中的 `.agents/skills/weekly-review/SKILL.md` 并执行一次第一阶段，不创建定时任务；确认它能读取 Journal 与 Note 并写入 `reviews/`。
 7. **创建定时任务**：先查看 [`scheduled-task-prompt/README.md`](scheduled-task-prompt/README.md) 选择任务。打开对应 Prompt，复制原始 Markdown 并粘贴到刚才的专用聊天，将 `YOUR_GITHUB_USERNAME/YOUR_REPOSITORY` 替换为自己的仓库，再设置执行时间。后续结果会回到同一聊天，方便继续回答问题和选择输出方向。
 8. **测试文章工作台**：先只测试它能否通过 GitHub 连接完整读取 `.agents/skills/new-article/SKILL.md`。通道确认后，再给一个选定主题或从其他地方带来的候选方向，让它按 Skill 召回素材、Grill Me 并生成草稿。草稿默认写入 `practices/weekly-writing/drafts/`，以后继续更新同一文件；不会自动发布。
 
-Project Instructions 负责 Journal、Input 与 Article Workshop 的长期入口；Scheduled Task Prompt 负责定期触发；具体规则始终以 `.agents/skills/` 为准。
+Project Instructions 负责 Journal、Note 与 Article Workshop 的长期入口；Scheduled Task Prompt 负责定期触发；具体规则始终以 `.agents/skills/` 为准。

@@ -127,7 +127,7 @@ description: 发现与用户现有信息源有明显距离的高质量资源，�
 
 ### 不要做的事
 
-- 不在推荐时自动创建 Daily 笔记；
+- 不在推荐时自动创建 Note；
 - 不因为推荐了资源就假装用户已经阅读；
 - 不附带 5 个“顺便可以看看”；
 - 不要求用户带着问题阅读；
@@ -176,7 +176,7 @@ title: "{resource title}"
 date: {YYYY-MM-DD}
 source: "{creator / publication / podcast / channel if known}"
 tags:
-  - input
+  - note
   - new-bubble
 ---
 
@@ -224,7 +224,7 @@ tags:
 - 是否核实了标题、来源和链接？
 - 是否真的比近期 feed 更异质，而不是换语言重复同类内容？
 - 是否避免近期重复领域和重复资源？
-- 是否没有提前写入 Daily？
+- 是否没有提前写入 Note？
 - 是否明确告诉用户完成后只需说“完成了”？
 
 ### complete
