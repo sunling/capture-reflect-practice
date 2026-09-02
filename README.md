@@ -1,6 +1,6 @@
 # 让记录有下文
 
-**Record. Reflect. Practice.**
+**Capture. Reflect. Practice.**
 
 这是一个与 AI 协作的个人记录、回看与实践系统，也是 **ChatGPT + GitHub** 路径的仓库模板。它不追求收藏所有信息，而是帮助你完成一个朴素的循环：
 
@@ -57,7 +57,7 @@
 
 ## 豆包 + 飞书版本
 
-如果希望把记录保存在飞书云盘，并通过豆包智能体使用这些工作流，请使用独立仓库：[record-reflect-practice-doubao-feishu](https://github.com/sunling/record-reflect-practice-doubao-feishu)。
+如果希望把记录保存在飞书云盘，并通过豆包智能体使用这些工作流，请使用独立仓库：[capture-reflect-practice-doubao-feishu](https://github.com/sunling/capture-reflect-practice-doubao-feishu)。
 
 ## 隐私提醒
 
