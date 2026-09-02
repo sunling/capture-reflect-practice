@@ -13,7 +13,7 @@
 | 核心 Skill | 推荐承载方式 | 配置文件 |
 | --- | --- | --- |
 | `capture-journal` | 长期 Project | [new-journal.md](project-settings/new-journal.md) |
-| `capture-input` | 长期 Project | [new-input.md](project-settings/new-input.md) |
+| `capture-note` | 长期 Project | [new-note.md](project-settings/new-note.md) |
 | `weekly-review` | 专用聊天中的定时任务 | [weekly-review.md](scheduled-task-prompt/weekly-review.md) |
 | `bubble-breaker` | 定时任务 | [break-bubble.md](scheduled-task-prompt/break-bubble.md) |
 | `new-article` | 长期 Project（文章工作台） | [new-article.md](project-settings/new-article.md) |
@@ -29,7 +29,7 @@ Journal、Input 与 Article Workshop 适合保留独立 Project：前两个接�
   - `README.md`
   - `new-article.md`
   - `new-journal.md`
-  - `new-input.md`
+  - `new-note.md`
 - `scheduled-task-prompt/`
   - `README.md`
   - `break-bubble.md`
@@ -44,7 +44,7 @@ Journal、Input 与 Article Workshop 适合保留独立 Project：前两个接�
 1. **复制模板仓库**：先用仓库根目录的 **Use this template** 创建自己的仓库；真实记录建议放在 Private 仓库。
 2. **填写个人偏好**：在根目录 `PROFILE.md` 中填写时区、主要语言和隐私边界。
 3. **连接 GitHub**：在 ChatGPT 中连接并授权 GitHub。
-4. **创建三个长期 Project**：先查看 [`project-settings/README.md`](project-settings/README.md)，再分别打开 [`new-journal.md`](project-settings/new-journal.md)、[`new-input.md`](project-settings/new-input.md) 与 [`new-article.md`](project-settings/new-article.md)，复制原始 Markdown 并粘贴到对应 Project 的 **Project Instructions**。第三个 Project 建议命名为“文章工作台”。只需替换 `YOUR_GITHUB_USERNAME/YOUR_REPOSITORY`；不要把完整 Skill 再粘贴进 Project Instructions，文章工作台会在每次任务开始时从仓库读取最新 Skill。
+4. **创建三个长期 Project**：先查看 [`project-settings/README.md`](project-settings/README.md)，再分别打开 [`new-journal.md`](project-settings/new-journal.md)、[`new-note.md`](project-settings/new-note.md) 与 [`new-article.md`](project-settings/new-article.md)，复制原始 Markdown 并粘贴到对应 Project 的 **Project Instructions**。第三个 Project 建议命名为“文章工作台”。只需替换 `YOUR_GITHUB_USERNAME/YOUR_REPOSITORY`；不要把完整 Skill 再粘贴进 Project Instructions，文章工作台会在每次任务开始时从仓库读取最新 Skill。
 5. **测试记录入口**：在 Journal 或 Input Project 中保存一条不敏感的测试记录，确认 GitHub 读取与写入都能工作。
 6. **测试 Weekly Review**：新建一个专用聊天，先手动要求 ChatGPT 读取你仓库中的 `.agents/skills/weekly-review/SKILL.md` 并执行一次第一阶段，不创建定时任务；确认它能读取两类 Daily 并写入 `reviews/`。
 7. **创建定时任务**：先查看 [`scheduled-task-prompt/README.md`](scheduled-task-prompt/README.md) 选择任务。打开对应 Prompt，复制原始 Markdown 并粘贴到刚才的专用聊天，将 `YOUR_GITHUB_USERNAME/YOUR_REPOSITORY` 替换为自己的仓库，再设置执行时间。后续结果会回到同一聊天，方便继续回答问题和选择输出方向。

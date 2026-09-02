@@ -27,10 +27,10 @@ description: 发现与用户现有信息源有明显距离的高质量资源，�
 
 - 根目录 `README.md`；
 - `.agents/ORCHESTRATOR.md`；
-- `.agents/skills/capture-input/SKILL.md`；
+- `.agents/skills/capture-note/SKILL.md`；
 - 用户指定的话题、资源或日期范围；
-- 运行 `discover` 时，按需读取最近少量相关 `daily/inputs/`，避免重复推荐已经完成过的资源或持续停留在同一种领域；
-- 只有任务需要时，才读取少量 `daily/journal/` 或 Practice 材料。
+- 运行 `discover` 时，按需读取最近少量相关 `notes/`，避免重复推荐已经完成过的资源或持续停留在同一种领域；
+- 只有任务需要时，才读取少量 `journals/` 或 Practice 材料。
 
 不要为了“个性化”穷举个人历史。
 
@@ -103,7 +103,7 @@ description: 发现与用户现有信息源有明显距离的高质量资源，�
    - 本身有高质量证据、叙事、观察或专业内容；
    - 值得认真花一段时间，而不是只提供一个“有趣事实”；
    - 能作为某个陌生领域的具体入口；
-6. 输出一个待完成任务，不写入 `daily/inputs`；
+6. 输出一个待完成任务，不写入 `notes`；
 7. 等用户真正完成后，再进入 `complete`。
 
 ### 推荐时的输出格式
@@ -157,12 +157,12 @@ description: 发现与用户现有信息源有明显距离的高质量资源，�
 ### 流程
 
 1. 确认当前会话中最近一个明确的 Bubble Breaker 资源；
-2. 如果当前上下文无法确定资源，再查看近期 `daily/inputs` 或让用户提供资源名；不要猜；
+2. 如果当前上下文无法确定资源，再查看近期 `notes` 或让用户提供资源名；不要猜；
 3. 优先使用 `PROFILE.md` 中的时区记录实际完成日期和时间；未填写时使用当前执行环境的本地时区，若日期有歧义再询问；
-4. 按 `capture-input` 规范写入：
+4. 按 `capture-note` 规范写入：
 
 ```text
-daily/inputs/{YYYY}/{YYYYMM}/{YYYYMMDD}-{keyword}.md
+notes/{YYYY}/{YYYYMM}/{YYYYMMDD}-{keyword}.md
 ```
 
 5. 默认只记录完成事实，不生成总结；
@@ -201,7 +201,7 @@ tags:
 
 - 同一个资源已经有完成记录时，不新建重复文件；
 - 用户是在第二次阅读/收听时，可在原文件追加新的 `再次完成时间`；
-- 同日文件名冲突时，按 `capture-input` 规范具体化关键词；
+- 同日文件名冲突时，按 `capture-note` 规范具体化关键词；
 - 不创建 `v2`、`final`。
 
 ---

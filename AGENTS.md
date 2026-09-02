@@ -16,13 +16,13 @@
 - 不确定保存位置或隐私边界时，先询问。
 - 新文件遵循对应目录 README 与 Skill 中的命名规则。
 - 不要因为一条孤立记录就创建长期 Practice。
-- Weekly Review 每次都存入 `reviews/`，不要写回 `daily/inputs/`。
+- Weekly Review 每次都存入 `reviews/`，不要写回 `notes/`。
 - 修改后说明新增或改动了哪些文件。
 
 ## 默认流程
 
 - 记录经历：读取 `.agents/skills/capture-journal/SKILL.md`
-- 保存外部输入：读取 `.agents/skills/capture-input/SKILL.md`
+- 保存外部输入：读取 `.agents/skills/capture-note/SKILL.md`
 - 探索一个陌生输入：读取 `.agents/skills/bubble-breaker/SKILL.md`
 - 回看最近七天、继续回答回看问题或寻找输出方向：读取 `.agents/skills/weekly-review/SKILL.md`
 - 把已经选定的主题逐步打磨成简单文章：读取 `.agents/skills/new-article/SKILL.md`

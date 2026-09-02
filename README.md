@@ -23,8 +23,8 @@
 ```text
 .
 ├── daily/
-│   ├── journal/       # 发生在自己身上的事、感受与观察
-│   └── inputs/        # 书、文章、播客、对话等外部输入
+│   ├── journals/       # 发生在自己身上的事、感受与观察
+│   └── notes/        # 书、文章、播客、对话等外部输入
 ├── reviews/           # 每次回看的存档，不混入原始 Daily
 ├── practices/         # 持续实践，以及正在反复打磨的文章草稿
 ├── refs/chatgpt/      # ChatGPT Project 与定时任务配置
@@ -39,7 +39,7 @@
 ## 六个示例 Skill
 
 - [capture-journal](.agents/skills/capture-journal/SKILL.md)：把一段经历整理成 Journal，但不替你编造解释。
-- [capture-input](.agents/skills/capture-input/SKILL.md)：保存外部输入，同时区分原内容与你的回应。
+- [capture-note](.agents/skills/capture-note/SKILL.md)：保存外部输入，同时区分原内容与你的回应。
 - [weekly-review](.agents/skills/weekly-review/SKILL.md)：回看最近七天、保存回看档案、提出问题，并发现少量候选输出方向。
 - [new-article](.agents/skills/new-article/SKILL.md)：围绕选定主题跨时间召回相关素材，再用 Grill Me 问清表达并持续更新文章草稿。
 - [develop-practice](.agents/skills/develop-practice/SKILL.md)：把有证据的线索发展为可持续的小实践。
@@ -49,8 +49,8 @@
 
 ## 什么放在哪里
 
-- 今天发生了什么、我有什么感觉：`daily/journal/`
-- 我读到、听到或看到什么：`daily/inputs/`
+- 今天发生了什么、我有什么感觉：`journals/`
+- 我读到、听到或看到什么：`notes/`
 - 一段时间里反复出现了什么、我想继续问什么：`reviews/`
 - 某个问题反复出现，且我愿意持续行动：`practices/<实践名>/`
 - 已经选定一个主题，准备生成并继续打磨文章：`practices/<输出练习名>/drafts/YYYYMMDD-文章主题.md`

@@ -23,7 +23,7 @@ Daily 中出现线索
 ## 边界
 
 - 只有一个刚出现的念头，没有行动或反馈：先留在 Daily；
-- 只是要保存一条经历或输入：分别使用 `capture-journal` 或 `capture-input`；
+- 只是要保存一条经历或输入：分别使用 `capture-journal` 或 `capture-note`；
 - 只是想回看最近记录：先使用 `weekly-review`；
 - 已经有输出练习，只是围绕选定主题追问、写作或继续修改草稿：使用 `new-article`；
 - 一次性待办：直接行动，不必建立 Practice。
@@ -31,7 +31,7 @@ Daily 中出现线索
 ## 开始前读取
 
 - 根目录 `README.md`、`PROFILE.md` 与 `.agents/ORCHESTRATOR.md`；
-- 支持这项实践的少量 `daily/journal/` 和 `daily/inputs/`；
+- 支持这项实践的少量 `journals/` 和 `notes/`；
 - `practices/README.md`；
 - 若同名或近义 Practice 已存在，读取其 `mission.md`、`current.md` 和本轮必要材料。
 

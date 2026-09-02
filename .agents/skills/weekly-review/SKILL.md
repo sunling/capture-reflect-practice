@@ -1,6 +1,6 @@
 ---
 name: weekly-review
-description: 回看最近七天或指定范围内的 `daily/journal/` 与 `daily/inputs/`，识别有证据的反复线索、连接和变化，提出少量问题、候选输出方向并始终将结果存入 `reviews/`；用户回应后继续更新同一档案。用于“回看最近七天”“我最近有什么 pattern”“每周回看”“回答上次回看的问题”等请求及定期回看任务。
+description: 回看最近七天或指定范围内的 `journals/` 与 `notes/`，识别有证据的反复线索、连接和变化，提出少量问题、候选输出方向并始终将结果存入 `reviews/`；用户回应后继续更新同一档案。用于“回看最近七天”“我最近有什么 pattern”“每周回看”“回答上次回看的问题”等请求及定期回看任务。
 ---
 
 # Weekly Review｜回看、追问与发现方向
@@ -23,7 +23,7 @@ Weekly Review 到发现方向为止，不在同一流程中起草文章。
 
 ## 边界
 
-- 只是保存一条新经历或外部输入：分别使用 `capture-journal` 或 `capture-input`；
+- 只是保存一条新经历或外部输入：分别使用 `capture-journal` 或 `capture-note`；
 - 只是推荐陌生资源：使用 `bubble-breaker`；
 - 已经选定主题并确认要写文章：使用 `new-article`；
 - 不把每周回看强行写成文章，也不因为出现一个想法就创建 Practice；
@@ -33,7 +33,7 @@ Weekly Review 到发现方向为止，不在同一流程中起草文章。
 
 - 根目录 `README.md`、`PROFILE.md` 与 `.agents/ORCHESTRATOR.md`；
 - `reviews/README.md`；
-- 指定范围内全部 `daily/journal/` 与 `daily/inputs/`；
+- 指定范围内全部 `journals/` 与 `notes/`；
 - 用户提供的补充材料；
 - 只有需要确认线索是否已进入真实行动时，才读取少量相关 Practice；
 - 只有继续上一次回看时，才读取对应 Review 档案。

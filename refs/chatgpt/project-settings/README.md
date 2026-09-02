@@ -6,8 +6,8 @@
 
 | Project Instructions | 建议的 Project 名称 | 主要用途 | 默认去向 |
 | --- | --- | --- | --- |
-| [`new-journal.md`](new-journal.md) | 随时日记 | 随时记录亲历事件、感受和身体经验 | `daily/journal/` |
-| [`new-input.md`](new-input.md) | 输入笔记 | 保存文章、播客、书、视频和对话带来的触动 | `daily/inputs/` |
+| [`new-journal.md`](new-journal.md) | 随时日记 | 随时记录亲历事件、感受和身体经验 | `journals/` |
+| [`new-note.md`](new-note.md) | 输入笔记 | 保存文章、播客、书、视频和对话带来的触动 | `notes/` |
 | [`new-article.md`](new-article.md) | 文章工作台 | 接住选定主题，召回素材、Grill Me 并持续打磨草稿 | `practices/weekly-writing/drafts/` |
 
 三个 Project 是三个长期入口，不代表所有 Skill 都需要创建 Project。Weekly Review 和 Bubble Breaker 更适合在专用聊天中测试后建立定时任务，详见 [`../scheduled-task-prompt/README.md`](../scheduled-task-prompt/README.md)。
