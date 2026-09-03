@@ -4,7 +4,7 @@
 
 ## 当前任务
 
-- [`weekly-review.md`](weekly-review.md)：每周回看最近七天的 journals/ 和 notes/，保存 Review，并把问题与可能发展的方向返回同一聊天；不会在定时运行中直接生成文章或创建 Practice。
+- [`weekly-review.md`](weekly-review.md)：每周回看最近七天的 `journals/` 和 `notes/`，把回看档案存入 `reviews/`，并将问题与可能发展的方向返回同一聊天；不会在定时运行中直接生成文章或在 `practices/` 中创建实践。
 - [`break-bubble.md`](break-bubble.md)：定期推荐一个经过核实、与现有关注有距离的资源；完成前不入库。已连接并授权 Gmail 时，也可以按需把任务发送到指定邮箱。
 
 ## 使用前

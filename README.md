@@ -4,7 +4,7 @@
 
 这是一个与 AI 协作的个人记录、回看与实践系统，也是 **ChatGPT + GitHub** 路径的仓库模板。它不追求收藏所有信息，而是帮助你完成一个朴素的循环：
 
->  认真生活与输入产生记录 (Journals & Notes) -> 回看发现模式 (Weekly Review) -> 变成持续的行动 (Practice) -> 产生真实的反馈 -> 反馈带来新的生活感受与输入 -> 继续产生新的记录
+> 认真生活与输入产生记录（journal entries and notes）→ 回看发现模式（weekly review）→ 变成持续的实践（practice）→ 产生真实反馈 → 反馈带来新的生活感受与输入 → 继续产生新的记录
 
 仓库里没有作者的私人记录，只有目录结构、使用说明，以及 6 个可以继续修改的仓库内 Skill。你可以把它用于个人记录，也可以在“让记录有下文”工作坊中跟着搭建。
 
@@ -24,7 +24,7 @@
 .
 ├── journals/          # 发生在自己身上的事、感受与观察
 ├── notes/             # 书、文章、播客、对话等外部输入
-├── reviews/           # 每次回看的存档，不混入原始 Journals & Notes
+├── reviews/           # 每次回看的存档，不混入原始日记记录与笔记
 ├── practices/         # 持续实践，以及正在反复打磨的文章草稿
 ├── refs/chatgpt/      # ChatGPT Project 与定时任务配置
 ├── .agents/
@@ -37,7 +37,7 @@
 
 ## 六个示例 Skill
 
-- [capture-journal](.agents/skills/capture-journal/SKILL.md)：把一段经历整理成 Journal，但不替你编造解释。
+- [capture-journal](.agents/skills/capture-journal/SKILL.md)：把一段经历整理成 journal entry，但不替你编造解释。
 - [capture-note](.agents/skills/capture-note/SKILL.md)：保存外部输入，同时区分原内容与你的回应。
 - [weekly-review](.agents/skills/weekly-review/SKILL.md)：回看最近七天、保存回看档案、提出问题，并发现少量候选输出方向。
 - [new-article](.agents/skills/new-article/SKILL.md)：围绕选定主题跨时间召回相关素材，再用 Grill Me 问清表达并持续更新文章草稿。
@@ -46,6 +46,13 @@
 
 这些是**仓库内 Skill 示例**，目的是展示如何把工作方法写给 AI。它们不会自动安装成 ChatGPT 或 Codex 的全局 Skill；复制仓库后，你可以按自己的习惯继续修改。
 
+## 术语约定
+
+- `journal entry`、`note`、`review` 和 `practice` 表示单个内容或概念。
+- `journals/`、`notes/`、`reviews/` 和 `practices/` 表示真实目录；目录名始终使用小写复数、反引号和结尾斜杠。
+- 指向目录内材料时也使用目录格式，例如“读取 `practices/` 中的相关材料”，不要只写含义不明的英文概念名。
+- Skill 名称使用小写连字符并放在反引号中，例如 `capture-journal` 和 `weekly-review`。
+
 ## 什么放在哪里
 
 - 今天发生了什么、我有什么感觉：`journals/`
@@ -53,7 +60,7 @@
 - 一段时间里反复出现了什么、我想继续问什么：`reviews/`
 - 某个问题反复出现，且我愿意持续行动：`practices/<实践名>/`
 - 已经选定一个主题，准备生成并继续打磨文章：`practices/<输出练习名>/drafts/YYYYMMDD-文章主题.md`
-- 只是一个念头，还没有证据：先留在 Journals & Notes，不急着立项
+- 只是一个念头，还没有证据：先留在 `journals/` 或 `notes/`，不急着立项
 
 ## 豆包 + 飞书版本
 
@@ -70,8 +77,8 @@
 
 - 先记录，再解释。
 - 让结构服务生活，不让生活迁就结构。
-- 回看存档与原始 Journals & Notes 分开，避免把 AI 的总结再次当成新输入。
-- 只有出现重复、行动或反馈时，才把线索升级为 Practice。
+- `reviews/` 中的回看档案与 `journals/`、`notes/` 中的原始记录分开，避免把 AI 的总结再次当成新输入。
+- 只有出现重复、行动或反馈时，才把线索发展为实践并放入 `practices/`。
 - AI 可以帮助整理和追问，但不替你定义经验。
 
 本项目采用 [MIT License](LICENSE)。
