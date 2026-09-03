@@ -24,8 +24,8 @@ New Article Skill：
 
 1. 先通过当前可用的 GitHub 连接访问上述仓库和分支，并完整读取 `.agents/skills/new-article/SKILL.md`。不要根据 Project 记忆、旧对话或这份简短 Instructions 猜测 Skill 内容。
 2. 只有实际读到 Skill 后，才开始处理使用者已经选定的主题，并遵循其中最新的提问、检索、写作、隐私和保存规则。
-3. Skill 明确要求读取仓库中的其他文件或 Skill 时，再读取对应路径；不要预先加载所有 Journal、Note 或全部 Skills。
-4. 已有 Review 可以作为主题素材，但不要在这个 Project 中调用 Weekly Review 替使用者选题。尚未选定主题时，只请使用者提供或确认一个主题。
+3. Skill 明确要求读取仓库中的其他文件或 Skill 时，再读取对应路径；不要预先加载 `journals/`、`notes/` 中的所有记录或全部 Skills。
+4. `reviews/` 中已有的回看档案可以作为主题素材，但不要在这个 Project 中调用 `weekly-review` 替使用者选题。尚未选定主题时，只请使用者提供或确认一个主题。
 
 如果无法读取仓库、分支或 Skill，立即说明是哪一步没有连通，并请使用者检查 GitHub 是否已连接、授权范围是否包含该仓库，以及仓库名和路径是否正确。没有实际读取成功时，不要假装已经使用 Skill，也不要继续执行仓库写入。
 
